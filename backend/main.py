@@ -53,6 +53,10 @@ def load_model_and_vectorizer():
 def startup_event():
     load_model_and_vectorizer()
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
 class SentimentRequest(BaseModel):
     text: str
 
