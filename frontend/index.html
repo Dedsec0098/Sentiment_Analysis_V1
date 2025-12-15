@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Sentiment Analyzer</h1>
+            <p class="subtitle">Enter text to analyze its sentiment</p>
+            
+            <div class="input-group">
+                <textarea id="inputText" placeholder="Type something here... (e.g., 'I love this product!')"></textarea>
+            </div>
+            
+            <button id="analyzeBtn" onclick="analyzeSentiment()">Analyze Sentiment</button>
+            
+            <div id="result" class="result-container hidden">
+                <div class="sentiment-box">
+                    <span id="sentimentLabel">Positive</span>
+                </div>
+                <p class="confidence">Confidence: <span id="confidenceValue">0%</span></p>
+            </div>
+            
+            <div id="error" class="error-message hidden"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
