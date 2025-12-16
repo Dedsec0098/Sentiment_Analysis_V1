@@ -140,3 +140,63 @@ button:disabled {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Social Links */
+.social-links {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: white;
+}
+
+.social-btn i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-btn.github {
+    background-color: #24292e;
+}
+
+.social-btn.github:hover {
+    background-color: #2f363d;
+}
+
+.social-btn.twitter {
+    background-color: #000000; /* X brand color */
+}
+
+.social-btn.twitter:hover {
+    background-color: #333333;
+}
+
+.footer-credit {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 0 15px 0 0;
+    z-index: 1000;
+}

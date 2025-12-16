@@ -6,6 +6,7 @@
     <title>Sentiment Analyzer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -14,7 +15,7 @@
             <p class="subtitle">Enter text to analyze its sentiment</p>
             
             <div class="input-group">
-                <textarea id="inputText" placeholder="Type something here... (e.g., 'I love this product!')"></textarea>
+                <textarea id="inputText" placeholder="Type something here... (e.g, 'I love this product!')"></textarea>
             </div>
             
             <button id="analyzeBtn" onclick="analyzeSentiment()">Analyze Sentiment</button>
@@ -28,7 +29,19 @@
             
             <div id="error" class="error-message hidden"></div>
         </div>
+
+        <div class="social-links">
+            <a href="https://github.com/Dedsec0098/Sentiment_Analysis_V1" target="_blank" class="social-btn github">
+                <i class="fab fa-github"></i>
+                <span>Give us a ⭐ on GitHub</span>
+            </a>
+            <a href="https://x.com/Mr_Jingles_07" target="_blank" class="social-btn twitter">
+                <i class="fab fa-x-twitter"></i>
+                <span>Follow me on X</span>
+            </a>
+        </div>
     </div>
+    <div class="footer-credit">Made with ❤️ by SHRISH</div>
     <script src="script.js"></script>
 </body>
 </html>
