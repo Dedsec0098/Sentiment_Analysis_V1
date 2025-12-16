@@ -1,7 +1,13 @@
 # Sentiment Analysis App
 
-This is a production-ready Sentiment Analysis application using Logistic Regression and made it's API using FastAPI and a simple HTML/CSS/JS frontend.
+This is a production-ready Sentiment Analysis application in which I used Sentiment 140 dataset from Kaggle which contains 1.6 million tweets labeled by positive or negative.
 
+- Cleaned the data by removing stopwords
+- Used NLTK library with ( wordnet , omw-1.4 ) which gave synonyms , antonyms and multilingual support to be used for Lemmatization
+- Applied Bigrams in Tfidf which gave huge bump in accuracy of the model because meaning in language often comes from word pairs, not single words
+- Used Lemmatization over PorterStemmer to produce real, meaningful words, while stemming often produces crude, sometimes incorrect word fragments.
+- Tuned Logistic Regression model by controling regularisation
+  
 ## Project Structure
 
 - `backend/`: Contains the FastAPI application and training script.
@@ -46,3 +52,18 @@ This is a production-ready Sentiment Analysis application using Logistic Regress
         - **Start Command**: `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`
 
 3.  **Access**: Your app will be live at your Render URL.
+
+## Future Enhancements
+
+- I will build a version 2 of this model by using BERT ( Bidirectional Encoder Representations from Transformers )
+- It will give my model the abilty of reading the sentence BOTH ways
+- Making it understand true meaning of the words by reading the sentence from left->right and right->left
+- It would also be able to handle conditions like Misspellings , Slang , Rare words
+
+## 👨‍💻 Author
+
+Created with passion ⚡️ by Shrish Mishra
+
+---
+
+⭐ If you find this project useful, please consider giving it a star!
